@@ -10,7 +10,7 @@ answr = input("what is the Capital of is Cross River State? ").lower()
 
 if (answr == ans):
     print("correct answer")
-    score =+1
+    score += 2
 else:
     print("wrong answer")
 
@@ -20,8 +20,7 @@ answr = input("A place where plants and animals live is called? ").lower()
 
 if (answr == ans):
     print("correct answer")
-    score =+1
+    score += 2
 else:
     print("wrong answer")
-
-print(f"Your score is {score}")
+print(f"Your final score is {score}")

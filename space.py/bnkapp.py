@@ -2,6 +2,7 @@
 #banking app to deposit, withdraw and check balance
 
 print("welcome!!!")
+balnce = float(input("Your balance: "))
 
 #choosing options
 print("\nPick your option:")
@@ -14,24 +15,23 @@ print("4. Exit")
 choice = input()
 if (choice == '1'):
     amnt = int(input("amount: "))
+    balnce = (balnce + amnt)
     print(f"Your account has been credited with ${amnt}")
-    print(f"Your account balance is ${amnt} ")
+    print(f"Your account balance is ${balnce} ")
 
 elif (choice == '2'):#withdrawal
-    balnce = int('3000')
+    #balnce = float('3000.00')
     print(f"Your balance is ${balnce} ")
-    amnt = int(input("\ninput withdraw  amount: "))
+    amnt = float(input("\ninput withdraw  amount: "))
 
     if (balnce >= amnt):
-        balance = int(balnce - amnt)
+        balance = float(balnce - amnt)
         print(f"Your account balance is ${balance}")
 
     else:
         print("insufficiant fund")
 
 elif (choice == '3'):#check balance
-    check_balance = int
-    balnce = check_balance
     print(f"Your account balance is ${balnce} ")
 
 elif (choice == '4'):#Exit
