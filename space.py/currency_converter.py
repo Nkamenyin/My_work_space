@@ -1,6 +1,6 @@
 import requests
 
-"""the api end point will require input of from_to currency e.g 
+"""this api end point will require input of from_to currency e.g 
 https://rates.hirak.site/USD_NGN/"""
 
 def get_exchange_rates(base_currency):
